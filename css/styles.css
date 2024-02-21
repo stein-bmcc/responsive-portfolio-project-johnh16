@@ -140,3 +140,32 @@ See for more info: https://codepen.io/profstein/pen/mrMLRj
     YOUR STYLES
     Add your styles below.
     ========================== */
+
+    .site-header{
+        display: flex;
+         padding:10px;
+        background-color: rgb(190, 235, 183);
+
+          .site-title{
+            flex-grow:1;
+          }
+          .site-title h1{
+             margin: 0;
+          }
+          
+          .site-nav a{
+            padding-left: 15px;
+          }
+          
+          @media (max-width: 400px){
+            .site-title, .site-nav{
+              text-align: center;
+            }
+            .site-nav{
+              flex-grow: 1;
+            }
+            .site-nav a{
+              padding: 0 10px;
+            }
+
+        
